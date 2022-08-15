@@ -7,41 +7,23 @@
     <title>Javascript</title>
 </head>
 <body>
-    <script>
-        function calcularMedia(notas) {
-            let soma = 0;
-            for (c = 0; c < notas.length; c++){
-                soma += notas[c];
-            }
-       
 
-        media = soma / notas.length
+    <div class="container">
+        <form id="formulario-01">
+            <input type="text" placeholder="digite um número" name="n1">
+            <input type="text" placeholder="digite um número" name="n2">
+            <input type="text" placeholder="digite um número" name="n3">
+            <input type="text" placeholder="digite um número" name="n4">
+            <button type="submit">Enviar</button>
+        </form>
 
-        return media;
-        } 
-
-        let media; 
-
-        function aprovacao(notas) {
-            let media = calcularMedia(notas);
-
-            let condicao = media >= 8 ? 'aprovado' : 'reprovado';
-
-            return 'Media: ' + media + 'resultado: ' + condicao;
-        }
-
-        function contagemRegressiva(numero) {
-
-            console.log(numero);
-
-            let proximoNumero = numero -1
-
-            if (numero > 0)
-                contagemRegressiva(proximoNumero); // 9 
+        <div id="resultado">
             
-        }
+        </div>
 
-        contagemRegressiva(50);
-    </script>
+
+    </div>
+
+    <script type="text/javascript" src="./js/script.js"></script>
 </body>
 </html>
